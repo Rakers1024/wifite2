@@ -149,7 +149,7 @@ class Configuration(object):
         # WPA variables
         cls.wpa_filter = False  # Only attack WPA networks
         cls.wpa_deauth_timeout = 15  # Wait time between deauths
-        cls.wpa_attack_timeout = 300  # Wait time before failing
+        cls.wpa_attack_timeout = 1200  # Wait time before failing
         cls.wpa_handshake_dir = 'hs'  # Dir to store handshakes
         cls.wpa_strip_handshake = False  # Strip non-handshake packets
         cls.ignore_old_handshakes = False  # Always fetch a new handshake
@@ -199,9 +199,9 @@ class Configuration(object):
         cls.wps_only = False  # ONLY use WPS attacks on non-WEP networks
         cls.use_bully = False  # Use bully instead of reaver
         cls.use_reaver = False  # Use reaver instead of bully
-        cls.wps_pixie = True
+        cls.wps_pixie = False
         cls.wps_no_nullpin = True
-        cls.wps_pin = True
+        cls.wps_pin = False
         cls.wps_ignore_lock = False  # Skip WPS PIN attack if AP is locked.
         cls.wps_pixie_timeout = 300  # Seconds to wait for PIN before WPS Pixie attack fails
         cls.wps_fail_threshold = 100  # Max number of failures
